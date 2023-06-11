@@ -15,7 +15,7 @@ Order_66 is a project that showcases a list of Jedi who survived Order 66. It pr
 To use this project, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/your-username/jedi-survivors.git`
-2. Install the required dependencies: `pip install numpy pandas matplotlib`
+2. Install the required dependencies: `pip install numpy pandas matplotlib seaborn`
 
 ## Usage
 
@@ -29,6 +29,10 @@ To use this project, follow these steps:
 6. A histogram of the top 5 most powerful Jedi will be shown in a separate window.
 
 ![histogram.png](img/histogram.png)
+
+7. Alternately you can play with the file seaborn_test.py to try some interesting styling features from the Seaborn library.
+
+![seaborn.png](img/seaborn.png)
 
 ## Contributing
 
