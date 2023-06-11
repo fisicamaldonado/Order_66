@@ -39,5 +39,6 @@ To use this project, follow these steps:
 Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
 
 ![darth_vader](img/darth_vader.jpeg)
+
 Darth Vader drawing credits to @geek_carl
 
