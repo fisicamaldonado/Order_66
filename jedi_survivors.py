@@ -1,8 +1,18 @@
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
+"""
+order_66 is a project that showcases a list of Jedi who survived Order 66.
+We use numpy, pandas and matplotlib libraries.
+It provides a formatted table of the Jedi survivors and a histogram of the top 5 most powerful Jedi.
+"""
+
+import numpy as np #used to create an array for the dataset.
+import pandas as pd #the standard for tables.
+import matplotlib.pyplot as plt #to create a histogram.
+
 
 def create_table(data):
+    '''
+    Creates a table using pandas from the data loaded from the array, jedi_data.
+    '''
     jedi_table = pd.DataFrame(data)
     table_string = jedi_table.to_string(index=False)
 
@@ -22,21 +32,28 @@ def create_table(data):
 
 
 def create_histogram(data):
+    '''
+    Creates a histogram using matplotlib, from the jedi_data array.
+    '''
     top_5_jedi = data.nlargest(5, 'Force')
-
+    #Extracting top 5 jedi survivors.
     names = top_5_jedi['Name']
     force = top_5_jedi['Force']
-
+    #Defining title and labels for the histogram.
+    x_label = 'Name'
+    y_label = 'Force'
+    histogram_title = 'Top 5 powerful Jedi'
     plt.bar(names, force)
-    plt.xlabel('Name')
-    plt.ylabel('Force')
-    plt.title('Top 5 powerful Jedi')
-    plt.xticks(rotation=45)
+    plt.xlabel(x_label)
+    plt.ylabel(y_label)
+    plt.title(histogram_title)
+    plt.xticks(rotation=45) #rotating names in the x axis.
 
     plt.show()
 
-
+#dataset of jedi survivors
 jedi_data = np.array([
+    # (id, Name, age, Force)
     (1, 'Cal Kestis', 22, 82),
     (2, 'Cere Junda', 40, 78),
     (3, 'Ahsoka Tano', 32, 88),
@@ -54,7 +71,7 @@ jedi_data = np.array([
     dtype=[('id', int), ('Name', 'U15'), ('age', int), ('Force', int)]
 )
 
-formatted_table = create_table(jedi_data)
-print(formatted_table)
+order66_table = create_table(jedi_data)
+print(order66_table)
 
 create_histogram(pd.DataFrame(jedi_data))
