@@ -1,6 +1,8 @@
 # Order_66
 Playing with numpy, pandas &amp; matplotlib using data from the infamous Palpatine's order 66
 
+![order66](img/order66.jpeg)
+
 Order_66 is a project that showcases a list of Jedi who survived Order 66. It provides a formatted table of the Jedi survivors and a histogram of the top 5 most powerful Jedi.
 
 ## Table of Contents
@@ -32,3 +34,5 @@ To use this project, follow these steps:
 ## Contributing
 
 Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
+
+![darth_vader](img/darth_vader.jpeg)
