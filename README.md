@@ -9,7 +9,6 @@ Order_66 is a project that showcases a list of Jedi who survived Order 66. It pr
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
