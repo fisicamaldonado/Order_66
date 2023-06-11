@@ -22,7 +22,12 @@ To use this project, follow these steps:
 2. Modify the `jedi_data` array to include your desired Jedi survivors.
 3. Run the script: `python jedi_survivors.py`.
 4. The formatted table of Jedi survivors will be displayed in the console.
-5. A histogram of the top 5 most powerful Jedi will be shown in a separate window.
+
+![table.png](img/table.png)
+
+6. A histogram of the top 5 most powerful Jedi will be shown in a separate window.
+
+![histogram.png](img/histogram.png)
 
 ## Contributing
 
